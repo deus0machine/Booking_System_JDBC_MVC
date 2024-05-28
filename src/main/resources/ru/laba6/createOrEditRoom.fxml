@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.laba6.controllers.CreateOrEditRoomController">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="286.0" prefWidth="600.0" spacing="5.0">
+         <children>
+            <Label text="%status" />
+            <TextField fx:id="status_r" />
+            <Label text="%type" />
+            <TextField fx:id="type_r" />
+            <Label text="%cost" />
+            <TextField fx:id="cost_r" />
+            <Label text="%adres" />
+            <TextField fx:id="adres_r" />
+            <Label text="%idhotel" />
+            <TextField fx:id="idhotel_r" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#ok_click" text="%ok" />
+                  <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#cancel_click" text="%cancel" />
+               </children>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
